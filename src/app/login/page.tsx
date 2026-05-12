@@ -14,21 +14,23 @@ export default function LoginPage() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gondor-brown-dark via-gondor-stone to-gondor-sienna" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(204,119,34,0.12),transparent_60%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(204,119,34,0.08),transparent_60%)]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-gondor-brown-dark via-[#8B5520] to-[#cc7722]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(204,119,34,0.35),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(204,119,34,0.25),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(204,119,34,0.10),transparent_70%)]" />
 
       {/* Subtle pattern */}
       <div
-        className="absolute inset-0 opacity-[0.02]"
+        className="absolute inset-0 opacity-[0.04]"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cc7722' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M20 0L0 20h8l12-12 12 12h8z'/%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
 
       {/* Decorative glows */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-gondor-gold/5 blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-gondor-gold/5 blur-3xl" />
+      <div className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-[#cc7722]/15 blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-[#cc7722]/12 blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#cc7722]/8 blur-[100px]" />
 
       {/* Login Card */}
       <div className="relative z-10 w-full max-w-md mx-4 animate-fade-in-up py-8">
