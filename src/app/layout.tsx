@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Cinzel, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
@@ -17,21 +18,69 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Gondor Chic — Magic VentesStock",
+  title: "Gondor Chic | Magic VentesStock",
   description:
-    "Artefacts magiques et produits fantaisie premium du Royaume de Gondor. Poudre de fée, chemises de mithril, cristaux elfiques et bien plus.",
+    "Découvrez Gondor Chic, plateforme e-commerce premium vendant artefacts magiques, poudre de fée, chemises de mithril et cristaux elfiques du Royaume de Gondor.",
   keywords: [
     "Gondor Chic",
+    "e-commerce",
     "magie",
     "fantaisie",
-    "e-commerce",
-    "mithril",
     "poudre de fée",
+    "chemise mithril",
+    "cristal elfique",
+    "artefacts magiques",
+    "produits fantasy",
+    "e-commerce fantasy",
   ],
+  authors: [{ name: "Gondor Chic" }],
+  creator: "Gondor Chic",
+  publisher: "Gondor Chic",
   icons: {
     icon: "/crown.svg",
     apple: "/crown.svg",
   },
+  metadataBase: new URL("https://m1-dil-gondor-chic-callarduran-2026.vercel.app"),
+  alternates: {
+    canonical: "https://m1-dil-gondor-chic-callarduran-2026.vercel.app",
+  },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "https://m1-dil-gondor-chic-callarduran-2026.vercel.app",
+    siteName: "Gondor Chic",
+    title: "Gondor Chic — Plateforme E-commerce Fantaisie",
+    description:
+      "Artefacts magiques et produits fantaisie premium du Royaume de Gondor.",
+    images: [
+      {
+        url: "https://m1-dil-gondor-chic-callarduran-2026.vercel.app/crown.svg",
+        width: 200,
+        height: 200,
+        alt: "Logo Gondor Chic - Couronne",
+        type: "image/svg+xml",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@GondorChic",
+    creator: "@GondorChic",
+    title: "Gondor Chic — Magic VentesStock",
+    description:
+      "Plateforme e-commerce de produits magiques et artefacts fantaisie.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -39,11 +88,42 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Gondor Chic",
+    url: "https://m1-dil-gondor-chic-callarduran-2026.vercel.app",
+    logo: "https://m1-dil-gondor-chic-callarduran-2026.vercel.app/crown.svg",
+    description:
+      "Plateforme e-commerce vendant artefacts magiques et produits fantaisie premium du Royaume de Gondor.",
+    sameAs: [
+      "https://facebook.com/gondorchic",
+      "https://twitter.com/gondorchic",
+      "https://instagram.com/gondorchic",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+33-1-23-45-67-89",
+      contactType: "Customer Service",
+      email: "contact@gondor-chic.example.com",
+    },
+  };
+
   return (
     <html
       lang="fr"
       className={`${cinzel.variable} ${cormorant.variable} h-full antialiased`}
     >
+      <head>
+        <Script
+          id="schema-org"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="min-h-full flex flex-col font-[family-name:var(--font-cormorant)]">
         {children}
       </body>

@@ -1,0 +1,19 @@
+# Robots file for Magic VentesStock / Gondor Chic
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /_next/
+Disallow: /.next/
+
+# Allow specific crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://m1-dil-gondor-chic-callarduran-2026.vercel.app/sitemap.xml

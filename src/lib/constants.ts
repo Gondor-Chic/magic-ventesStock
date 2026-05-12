@@ -96,5 +96,5 @@ export const BRAND = {
   tagline: "Là où l'Élégance Noble rencontre l'Artisanat Magique",
   description:
     "Depuis la Tour Blanche de Minas Tirith, nous vous offrons les plus beaux artefacts magiques, vêtements enchantés et ingrédients mystiques — sélectionnés pour le citoyen exigeant de la Terre du Milieu.",
-  year: 2024,
+  year: 2026,
 } as const;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
+  <url>
+    <loc>https://m1-dil-gondor-chic-callarduran-2026.vercel.app/</loc>
+    <lastmod>2025-01-01T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://m1-dil-gondor-chic-callarduran-2026.vercel.app/crown.svg</image:loc>
+      <image:title>Logo Gondor Chic</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://m1-dil-gondor-chic-callarduran-2026.vercel.app/login</loc>
+    <lastmod>2025-01-01T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
