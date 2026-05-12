@@ -10,47 +10,51 @@ export const NAV_LINKS: NavLink[] = [
 export const FEATURED_PRODUCTS: Product[] = [
   {
     id: "fairy-dust-001",
+    reference: "GC-ING-001",
     name: "Poussière de Fée",
     description:
       "Récoltée dans les clairières enchantées de Lothlórien. Sublime toute potion magique d'une brillance lumineuse.",
     price: 49.99,
     currency: "PO",
+    stockQuantity: 150,
     imageUrl: "/images/fairy-dust.jpg",
     category: "Ingrédients Magiques",
-    inStock: true,
   },
   {
     id: "mithril-shirt-001",
+    reference: "GC-ARM-001",
     name: "Cotte de Mithril",
     description:
       "Forgée dans les anciennes salles de Khazad-dûm. Plus légère que la soie, plus résistante que les écailles de dragon.",
     price: 999.99,
     currency: "PO",
+    stockQuantity: 12,
     imageUrl: "/images/mithril-shirt.jpg",
     category: "Armure & Protection",
-    inStock: true,
   },
   {
     id: "elven-crystal-001",
+    reference: "GC-ART-001",
     name: "Cristal Elfique",
     description:
       "Un cristal scintillant des profondeurs des royaumes elfiques. Irradie une pure énergie de lumière stellaire.",
     price: 149.99,
     currency: "PO",
+    stockQuantity: 45,
     imageUrl: "/images/elven-crystal.jpg",
     category: "Artefacts Magiques",
-    inStock: true,
   },
   {
     id: "wizard-scrolls-001",
+    reference: "GC-SAV-001",
     name: "Parchemins de Magicien",
     description:
       "Parchemins anciens inscrits de sorts oubliés par les Istari. À manipuler avec précaution arcanique.",
     price: 79.99,
     currency: "PO",
+    stockQuantity: 88,
     imageUrl: "/images/wizard-scrolls.jpg",
     category: "Savoir & Légendes",
-    inStock: true,
   },
 ];
 

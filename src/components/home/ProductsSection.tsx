@@ -75,9 +75,12 @@ export default function ProductsSection() {
                   </span>
                   <span className="inline-flex items-center gap-1 text-xs text-gondor-emerald font-medium">
                     <Sparkles size={12} />
-                    En Stock
+                    {product.stockQuantity > 0 ? `${product.stockQuantity} en stock` : "Rupture"}
                   </span>
                 </div>
+                <p className="text-[10px] text-gondor-brown-light/60 tracking-wider uppercase">
+                  Réf : {product.reference}
+                </p>
               </div>
             </Card>
           ))}

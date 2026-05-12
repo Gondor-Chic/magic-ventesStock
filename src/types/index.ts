@@ -1,12 +1,13 @@
 export interface Product {
   id: string;
+  reference: string;
   name: string;
   description: string;
   price: number;
   currency: string;
+  stockQuantity: number;
   imageUrl: string;
   category: string;
-  inStock: boolean;
 }
 
 export interface NavLink {
