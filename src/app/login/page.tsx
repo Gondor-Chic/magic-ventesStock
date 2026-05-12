@@ -50,10 +50,10 @@ export default function LoginPage() {
               </div>
               <div className="gondor-separator mb-6" />
               <h1 className="font-[family-name:var(--font-cinzel)] text-xl font-semibold text-gondor-brown-dark mb-2">
-                Welcome, Traveler
+                Bienvenue, Voyageur
               </h1>
               <p className="text-sm text-gondor-brown-light">
-                Enter the gates of the kingdom
+                Franchissez les portes du royaume
               </p>
             </div>
 
@@ -61,9 +61,9 @@ export default function LoginPage() {
             <form onSubmit={handleSubmit} className="space-y-5">
               <Input
                 id="username"
-                label="Username"
+                label="Nom d'utilisateur"
                 type="text"
-                placeholder="Enter your name"
+                placeholder="Entrez votre nom"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 icon={<User size={18} strokeWidth={1.5} />}
@@ -72,9 +72,9 @@ export default function LoginPage() {
 
               <Input
                 id="password"
-                label="Password"
+                label="Mot de passe"
                 type="password"
-                placeholder="Enter your passphrase"
+                placeholder="Entrez votre phrase secrète"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 icon={<Lock size={18} strokeWidth={1.5} />}
@@ -88,14 +88,14 @@ export default function LoginPage() {
                     className="w-4 h-4 rounded border-gondor-cream-dark accent-gondor-gold cursor-pointer"
                   />
                   <span className="text-gondor-brown-light text-xs">
-                    Remember me
+                    Se souvenir de moi
                   </span>
                 </label>
                 <Link
                   href="#"
                   className="font-[family-name:var(--font-cinzel)] text-xs font-medium text-gondor-gold hover:text-gondor-gold-dark transition-colors duration-300"
                 >
-                  Forgot password?
+                  Mot de passe oublié ?
                 </Link>
               </div>
 
@@ -105,7 +105,7 @@ export default function LoginPage() {
                 size="lg"
                 className="w-full mt-2"
               >
-                Enter the Kingdom
+                Entrer dans le Royaume
                 <ArrowRight size={18} />
               </Button>
             </form>
@@ -114,12 +114,12 @@ export default function LoginPage() {
             <div className="mt-8 text-center">
               <div className="gondor-separator mb-6" />
               <p className="text-sm text-gondor-brown-light">
-                New to the realm?{" "}
+                Nouveau dans le royaume ?{" "}
                 <Link
                   href="#"
                   className="font-[family-name:var(--font-cinzel)] font-medium text-gondor-gold hover:text-gondor-gold-dark transition-colors duration-300"
                 >
-                  Request Access
+                  Demander l'accès
                 </Link>
               </p>
             </div>
@@ -141,7 +141,7 @@ export default function LoginPage() {
             href="/"
             className="text-gondor-cream/50 text-xs hover:text-gondor-gold transition-colors duration-300"
           >
-            ← Back to Home
+            ← Retour à l'accueil
           </Link>
         </div>
       </div>

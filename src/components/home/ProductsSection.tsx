@@ -25,15 +25,15 @@ export default function ProductsSection() {
           <div className="inline-flex items-center gap-2 mb-4">
             <div className="h-px w-8 bg-gondor-gold" />
             <span className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.3em] uppercase text-gondor-gold">
-              Featured Collection
+              Collection Vedette
             </span>
             <div className="h-px w-8 bg-gondor-gold" />
           </div>
           <h2 className="font-[family-name:var(--font-cinzel)] text-3xl sm:text-4xl font-bold text-gondor-brown-dark mb-4">
-            Magical Artifacts
+            Artefacts Magiques
           </h2>
           <p className="mx-auto max-w-xl text-gondor-brown-light text-lg">
-            Handcrafted treasures from the finest artisans across Middle-earth
+            Trésors artisanaux des meilleurs artisans de la Terre du Milieu
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function ProductsSection() {
                   </span>
                   <span className="inline-flex items-center gap-1 text-xs text-gondor-emerald font-medium">
                     <Sparkles size={12} />
-                    In Stock
+                    En Stock
                   </span>
                 </div>
               </div>

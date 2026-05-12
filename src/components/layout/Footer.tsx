@@ -17,7 +17,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gondor-cream-dark/70 text-sm leading-relaxed max-w-xs">
-              {BRAND.tagline}. Purveyors of fine magical goods since the Third Age.
+              {BRAND.tagline}. Fournisseurs de produits magiques d'exception depuis le Troisième Âge.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ export default function Footer() {
                   href="/login"
                   className="text-gondor-cream-dark/70 text-sm transition-colors duration-300 hover:text-gondor-gold"
                 >
-                  Sign In
+                  Connexion
                 </Link>
               </li>
             </ul>
@@ -51,12 +51,12 @@ export default function Footer() {
           {/* Contact & Social */}
           <div className="space-y-4">
             <h3 className="font-[family-name:var(--font-cinzel)] text-sm font-semibold tracking-widest uppercase text-gondor-gold">
-              Connect
+              Contact
             </h3>
             <p className="text-gondor-cream-dark/70 text-sm">
-              The White Tower, Minas Tirith
+              La Tour Blanche, Minas Tirith
               <br />
-              Kingdom of Gondor
+              Royaume de Gondor
             </p>
             <div className="flex gap-4">
               {[
@@ -80,9 +80,9 @@ export default function Footer() {
         <Separator className="!my-8 opacity-30" />
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-gondor-cream-dark/50 text-xs">
-          <p>© {BRAND.year} {BRAND.name}. All rights reserved.</p>
+          <p>© {BRAND.year} {BRAND.name}. Tous droits réservés.</p>
           <p className="font-[family-name:var(--font-cinzel)] tracking-wider">
-            Magic VentesStock Platform
+            Plateforme Magic VentesStock
           </p>
         </div>
       </div>

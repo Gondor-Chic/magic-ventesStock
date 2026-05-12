@@ -19,14 +19,14 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "Gondor Chic — Magic VentesStock",
   description:
-    "Premium magical artifacts and fantasy goods from the Kingdom of Gondor. Fairy dust, mithril shirts, elven crystals, and more.",
+    "Artefacts magiques et produits fantaisie premium du Royaume de Gondor. Poussière de fée, cottes de mithril, cristaux elfiques et bien plus.",
   keywords: [
     "Gondor Chic",
-    "magic",
-    "fantasy",
+    "magie",
+    "fantaisie",
     "e-commerce",
     "mithril",
-    "fairy dust",
+    "poussière de fée",
   ],
 };
 
@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="fr"
       className={`${cinzel.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-[family-name:var(--font-cormorant)]">

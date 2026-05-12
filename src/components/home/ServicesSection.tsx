@@ -27,15 +27,15 @@ export default function ServicesSection() {
           <div className="inline-flex items-center gap-2 mb-4">
             <div className="h-px w-8 bg-gondor-gold" />
             <span className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.3em] uppercase text-gondor-gold">
-              Platform Capabilities
+              Capacités de la Plateforme
             </span>
             <div className="h-px w-8 bg-gondor-gold" />
           </div>
           <h2 className="font-[family-name:var(--font-cinzel)] text-3xl sm:text-4xl font-bold text-gondor-brown-dark mb-4">
-            Kingdom Services
+            Services du Royaume
           </h2>
           <p className="mx-auto max-w-xl text-gondor-brown-light text-lg">
-            A complete commerce platform forged for the modern realm
+            Une plateforme de commerce complète forgée pour le royaume moderne
           </p>
         </div>
 

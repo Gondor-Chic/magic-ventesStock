@@ -1,96 +1,96 @@
 import type { Product, NavLink, Feature } from "@/types";
 
 export const NAV_LINKS: NavLink[] = [
-  { label: "Home", href: "/" },
+  { label: "Accueil", href: "/" },
   { label: "Collections", href: "#products" },
-  { label: "About", href: "#about" },
+  { label: "À Propos", href: "#about" },
   { label: "Services", href: "#services" },
 ];
 
 export const FEATURED_PRODUCTS: Product[] = [
   {
     id: "fairy-dust-001",
-    name: "Fairy Dust",
+    name: "Poussière de Fée",
     description:
-      "Harvested from the enchanted glades of Lothlórien. Enhances any magical potion with luminescent brilliance.",
+      "Récoltée dans les clairières enchantées de Lothlórien. Sublime toute potion magique d'une brillance lumineuse.",
     price: 49.99,
-    currency: "GP",
+    currency: "PO",
     imageUrl: "/images/fairy-dust.jpg",
-    category: "Magical Ingredients",
+    category: "Ingrédients Magiques",
     inStock: true,
   },
   {
     id: "mithril-shirt-001",
-    name: "Mithril Shirt",
+    name: "Cotte de Mithril",
     description:
-      "Forged in the ancient halls of Khazad-dûm. Lighter than silk, stronger than dragon scales.",
+      "Forgée dans les anciennes salles de Khazad-dûm. Plus légère que la soie, plus résistante que les écailles de dragon.",
     price: 999.99,
-    currency: "GP",
+    currency: "PO",
     imageUrl: "/images/mithril-shirt.jpg",
-    category: "Armor & Protection",
+    category: "Armure & Protection",
     inStock: true,
   },
   {
     id: "elven-crystal-001",
-    name: "Elven Crystal",
+    name: "Cristal Elfique",
     description:
-      "A shimmering crystal from the depths of the Elven kingdoms. Radiates pure starlight energy.",
+      "Un cristal scintillant des profondeurs des royaumes elfiques. Irradie une pure énergie de lumière stellaire.",
     price: 149.99,
-    currency: "GP",
+    currency: "PO",
     imageUrl: "/images/elven-crystal.jpg",
-    category: "Magical Artifacts",
+    category: "Artefacts Magiques",
     inStock: true,
   },
   {
     id: "wizard-scrolls-001",
-    name: "Wizard Scrolls",
+    name: "Parchemins de Magicien",
     description:
-      "Ancient scrolls inscribed with forgotten spells by the Istari. Handle with arcane caution.",
+      "Parchemins anciens inscrits de sorts oubliés par les Istari. À manipuler avec précaution arcanique.",
     price: 79.99,
-    currency: "GP",
+    currency: "PO",
     imageUrl: "/images/wizard-scrolls.jpg",
-    category: "Knowledge & Lore",
+    category: "Savoir & Légendes",
     inStock: true,
   },
 ];
 
 export const FEATURES: Feature[] = [
   {
-    title: "Online Orders",
-    description: "Place orders from across the realm, delivered by eagle or caravan.",
+    title: "Commandes en Ligne",
+    description: "Passez vos commandes depuis tout le royaume, livrées par aigle ou caravane.",
     icon: "scroll",
   },
   {
-    title: "Stock Management",
-    description: "Real-time inventory tracking across all kingdom outposts.",
+    title: "Gestion des Stocks",
+    description: "Suivi d'inventaire en temps réel dans tous les avant-postes du royaume.",
     icon: "warehouse",
   },
   {
-    title: "Secure Payments",
-    description: "Protected by the finest dwarven encryption. Your gold is safe.",
+    title: "Paiements Sécurisés",
+    description: "Protégés par le meilleur chiffrement nain. Votre or est en sécurité.",
     icon: "shield",
   },
   {
-    title: "Delivery Tracking",
-    description: "Follow your parcel from forge to doorstep via palantír network.",
+    title: "Suivi de Livraison",
+    description: "Suivez votre colis de la forge à votre porte via le réseau palantír.",
     icon: "map",
   },
   {
-    title: "Supplier Network",
-    description: "Connected to trusted artisans from every corner of Middle-earth.",
+    title: "Réseau Fournisseurs",
+    description: "Connecté aux artisans de confiance des quatre coins de la Terre du Milieu.",
     icon: "network",
   },
   {
-    title: "Kingdom Analytics",
-    description: "Comprehensive reports worthy of the Steward's council chamber.",
+    title: "Analytique du Royaume",
+    description: "Rapports complets dignes de la salle du conseil de l'Intendant.",
     icon: "chart",
   },
 ];
 
 export const BRAND = {
   name: "Gondor Chic",
-  tagline: "Where Noble Elegance Meets Magical Craft",
+  tagline: "Là où l'Élégance Noble rencontre l'Artisanat Magique",
   description:
-    "From the White Tower of Minas Tirith, we bring you the finest magical artifacts, enchanted garments, and mystical ingredients — curated for the discerning citizen of Middle-earth.",
+    "Depuis la Tour Blanche de Minas Tirith, nous vous offrons les plus beaux artefacts magiques, vêtements enchantés et ingrédients mystiques — sélectionnés pour le citoyen exigeant de la Terre du Milieu.",
   year: 2024,
 } as const;

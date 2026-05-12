@@ -33,7 +33,7 @@ export default function Navbar() {
             <button
               type="button"
               className="p-2 text-gondor-brown-light transition-colors duration-300 hover:text-gondor-gold cursor-pointer"
-              aria-label="Shopping bag"
+              aria-label="Panier"
             >
               <ShoppingBag size={20} strokeWidth={1.5} />
             </button>
@@ -42,7 +42,7 @@ export default function Navbar() {
               className="flex items-center gap-2 rounded-lg border border-gondor-gold/30 px-4 py-2 font-[family-name:var(--font-cinzel)] text-sm font-medium tracking-wide text-gondor-brown-dark transition-all duration-300 hover:border-gondor-gold hover:bg-gondor-cream/50"
             >
               <User size={16} strokeWidth={1.5} />
-              Sign In
+              Connexion
             </Link>
           </div>
 
@@ -51,7 +51,7 @@ export default function Navbar() {
             type="button"
             className="md:hidden p-2 text-gondor-brown-light cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            aria-label="Ouvrir le menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -82,7 +82,7 @@ export default function Navbar() {
               className="flex-1 flex items-center justify-center gap-2 rounded-lg border border-gondor-gold/30 py-2.5 font-[family-name:var(--font-cinzel)] text-sm font-medium tracking-wide text-gondor-brown-dark transition-all duration-300 hover:border-gondor-gold"
             >
               <User size={16} strokeWidth={1.5} />
-              Sign In
+              Connexion
             </Link>
           </div>
         </div>

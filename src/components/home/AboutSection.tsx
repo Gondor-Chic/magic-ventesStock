@@ -38,7 +38,7 @@ export default function AboutSection() {
                     1,200+
                   </p>
                   <p className="text-xs text-gondor-brown-light">
-                    Magical Artifacts
+                    Artefacts Magiques
                   </p>
                 </div>
               </div>
@@ -51,13 +51,13 @@ export default function AboutSection() {
               <div className="inline-flex items-center gap-2 mb-4">
                 <div className="h-px w-8 bg-gondor-gold" />
                 <span className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.3em] uppercase text-gondor-gold">
-                  Our Heritage
+                  Notre Héritage
                 </span>
               </div>
               <h2 className="font-[family-name:var(--font-cinzel)] text-3xl sm:text-4xl font-bold text-gondor-brown-dark mb-6 leading-tight">
-                A Kingdom Built on
+                Un Royaume Bâti sur
                 <br />
-                <span className="text-gradient-gold">Noble Craftsmanship</span>
+                <span className="text-gradient-gold">un Artisanat Noble</span>
               </h2>
               <p className="text-gondor-brown-light text-lg leading-relaxed">
                 {BRAND.description}
@@ -69,13 +69,13 @@ export default function AboutSection() {
               {[
                 {
                   icon: Shield,
-                  title: "Trusted Quality",
-                  desc: "Every item verified by the Council of Artisans",
+                  title: "Qualité Certifiée",
+                  desc: "Chaque article vérifié par le Conseil des Artisans",
                 },
                 {
                   icon: Crown,
-                  title: "Royal Heritage",
-                  desc: "Centuries of tradition in magical commerce",
+                  title: "Héritage Royal",
+                  desc: "Des siècles de tradition dans le commerce magique",
                 },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="flex gap-3">

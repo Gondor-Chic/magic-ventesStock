@@ -29,15 +29,15 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-2 rounded-full border border-gondor-gold/30 bg-gondor-gold/10 px-4 py-1.5 mb-8">
             <Sparkles size={14} className="text-gondor-gold-light" />
             <span className="font-[family-name:var(--font-cinzel)] text-xs tracking-widest uppercase text-gondor-gold-light">
-              Premium Magical Goods
+              Produits Magiques Premium
             </span>
           </div>
 
           {/* Main heading */}
           <h1 className="font-[family-name:var(--font-cinzel)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gondor-cream leading-tight mb-6">
-            Where Noble Elegance
+            L'Élégance Noble
             <br />
-            <span className="text-gradient-gold">Meets Magical Craft</span>
+            <span className="text-gradient-gold">rencontre l'Artisanat Magique</span>
           </h1>
 
           {/* Subtitle */}
@@ -49,10 +49,10 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" href="#products">
               <Sparkles size={18} />
-              Explore Collections
+              Explorer les Collections
             </Button>
             <Button variant="secondary" size="lg" href="#about" className="!bg-transparent !text-gondor-cream !border-gondor-cream/30 hover:!border-gondor-gold hover:!text-gondor-gold">
-              Our Kingdom
+              Notre Royaume
             </Button>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function HeroSection() {
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gondor-cream/40">
           <span className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.3em] uppercase">
-            Scroll
+            Défiler
           </span>
           <div className="w-px h-8 bg-gradient-to-b from-gondor-cream/40 to-transparent" />
         </div>
