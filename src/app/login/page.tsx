@@ -31,7 +31,7 @@ export default function LoginPage() {
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-gondor-gold/5 blur-3xl" />
 
       {/* Login Card */}
-      <div className="relative z-10 w-full max-w-md mx-4 animate-fade-in-up">
+      <div className="relative z-10 w-full max-w-md mx-4 animate-fade-in-up py-8">
         {/* Card */}
         <div className="rounded-2xl bg-gondor-ivory/95 backdrop-blur-xl shadow-gondor-lg border border-gondor-cream-dark/50 overflow-hidden">
           {/* Top decorative bar */}

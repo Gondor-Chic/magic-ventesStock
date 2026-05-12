@@ -56,14 +56,14 @@ export default function HeroSection() {
             </Button>
           </div>
         </div>
+      </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gondor-cream/40">
-          <span className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.3em] uppercase">
-            Défiler
-          </span>
-          <div className="w-px h-8 bg-gradient-to-b from-gondor-cream/40 to-transparent" />
-        </div>
+      {/* Scroll indicator */}
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-gondor-cream/40">
+        <span className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.3em] uppercase">
+          Défiler
+        </span>
+        <div className="w-px h-8 bg-gradient-to-b from-gondor-cream/40 to-transparent" />
       </div>
     </section>
   );
