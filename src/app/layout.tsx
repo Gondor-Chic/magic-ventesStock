@@ -28,6 +28,10 @@ export const metadata: Metadata = {
     "mithril",
     "poudre de fée",
   ],
+  icons: {
+    icon: "/crown.svg",
+    apple: "/crown.svg",
+  },
 };
 
 export default function RootLayout({

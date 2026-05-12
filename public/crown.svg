@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#FFFDF7" rx="40"/>
+  
+  <!-- Crown -->
+  <g transform="translate(100, 100)">
+    <!-- Base band -->
+    <ellipse cx="0" cy="20" rx="65" ry="20" fill="#C5963A" stroke="#A67C2E" stroke-width="2"/>
+    
+    <!-- Left point -->
+    <path d="M -45 20 L -70 -30 L -50 0 Z" fill="#D4AD5E" stroke="#A67C2E" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="-70" cy="-30" r="8" fill="#F5ECD7" stroke="#A67C2E" stroke-width="1.5"/>
+    
+    <!-- Center/main point (tallest) -->
+    <path d="M 0 20 L 0 -50 L 15 -10 Z" fill="#C5963A" stroke="#A67C2E" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 0 20 L 0 -50 L -15 -10 Z" fill="#D4AD5E" stroke="#A67C2E" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="0" cy="-50" r="10" fill="#FAF3E3" stroke="#A67C2E" stroke-width="2"/>
+    
+    <!-- Right point -->
+    <path d="M 45 20 L 70 -30 L 50 0 Z" fill="#D4AD5E" stroke="#A67C2E" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="70" cy="-30" r="8" fill="#F5ECD7" stroke="#A67C2E" stroke-width="1.5"/>
+    
+    <!-- Decorative crosses on band -->
+    <g stroke="#F5ECD7" stroke-width="2" stroke-linecap="round">
+      <line x1="-30" y1="10" x2="-30" y2="30"/>
+      <line x1="-30" y1="20" x2="-20" y2="20"/>
+      
+      <line x1="30" y1="10" x2="30" y2="30"/>
+      <line x1="30" y1="20" x2="40" y2="20"/>
+    </g>
+  </g>
+</svg>
