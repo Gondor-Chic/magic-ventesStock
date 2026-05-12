@@ -20,7 +20,7 @@ const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: 
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-24 bg-gondor-ivory">
+    <section id="services" className="py-24 bg-gondor-parchment">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">

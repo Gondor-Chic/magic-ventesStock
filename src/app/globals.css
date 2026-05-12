@@ -6,28 +6,30 @@
    ======================================== */
 
 @theme inline {
-  --color-gondor-gold: #C5963A;
-  --color-gondor-gold-light: #D4AD5E;
-  --color-gondor-gold-dark: #A67C2E;
-  --color-gondor-bronze: #8B6914;
-  --color-gondor-ochre: #BF8B2E;
-  --color-gondor-brown: #4A3520;
-  --color-gondor-brown-light: #6B4F35;
-  --color-gondor-brown-dark: #2E1F12;
-  --color-gondor-cream: #F5ECD7;
-  --color-gondor-cream-dark: #E8DCC0;
-  --color-gondor-parchment: #FAF3E3;
-  --color-gondor-ivory: #FFFDF7;
-  --color-gondor-charcoal: #1C1410;
-  --color-gondor-stone: #3D3229;
-  --color-gondor-mithril: #C0C5CE;
-  --color-gondor-mithril-light: #E3E6EB;
-  --color-gondor-emerald: #2D5A3D;
+  --color-gondor-gold: #cc7722;
+  --color-gondor-gold-light: #dd8833;
+  --color-gondor-gold-dark: #a05e18;
+  --color-gondor-bronze: #7a4810;
+  --color-gondor-ochre: #cc7722;
+  --color-gondor-terra: #b86b1d;
+  --color-gondor-sienna: #945520;
+  --color-gondor-brown: #5C3D1E;
+  --color-gondor-brown-light: #7A5A3A;
+  --color-gondor-brown-dark: #3A2510;
+  --color-gondor-cream: #F2E6D0;
+  --color-gondor-cream-dark: #E0D0B5;
+  --color-gondor-parchment: #F7EDE0;
+  --color-gondor-ivory: #FBF5EC;
+  --color-gondor-charcoal: #2A1E14;
+  --color-gondor-stone: #4A3828;
+  --color-gondor-mithril: #B8B0A5;
+  --color-gondor-mithril-light: #D6CFC7;
+  --color-gondor-emerald: #3D6B4A;
   --color-gondor-ruby: #8B2332;
 
-  --shadow-gondor: 0 4px 24px rgba(74, 53, 32, 0.12);
-  --shadow-gondor-lg: 0 8px 40px rgba(74, 53, 32, 0.18);
-  --shadow-gondor-gold: 0 4px 20px rgba(197, 150, 58, 0.25);
+  --shadow-gondor: 0 4px 24px rgba(92, 61, 30, 0.15);
+  --shadow-gondor-lg: 0 8px 40px rgba(92, 61, 30, 0.22);
+  --shadow-gondor-gold: 0 4px 20px rgba(204, 119, 34, 0.30);
 
   --font-heading: var(--font-cinzel);
   --font-body: var(--font-cormorant);
@@ -91,9 +93,9 @@ body {
 }
 
 .glass-card {
-  background: rgba(255, 253, 247, 0.85);
+  background: rgba(251, 245, 236, 0.88);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(197, 150, 58, 0.15);
+  border: 1px solid rgba(204, 119, 34, 0.18);
 }
 
 @keyframes shimmer {
@@ -105,7 +107,7 @@ body {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(197, 150, 58, 0.15) 50%,
+    rgba(204, 119, 34, 0.18) 50%,
     transparent 100%
   );
   background-size: 200% 100%;

@@ -18,7 +18,7 @@ const PRODUCT_GRADIENTS: Record<string, string> = {
 
 export default function ProductsSection() {
   return (
-    <section id="products" className="py-24 bg-gondor-ivory">
+    <section id="products" className="py-24 bg-gondor-parchment">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">

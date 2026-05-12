@@ -17,11 +17,11 @@ interface ButtonProps {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-gradient-to-r from-gondor-gold-dark via-gondor-gold to-gondor-gold-light text-white shadow-gondor-gold hover:shadow-gondor-lg hover:brightness-110",
+    "bg-gradient-to-r from-gondor-gold-dark via-gondor-ochre to-gondor-gold-light text-white shadow-gondor-gold hover:shadow-gondor-lg hover:brightness-110",
   secondary:
-    "bg-gondor-ivory border-2 border-gondor-gold text-gondor-brown-dark hover:bg-gondor-cream hover:border-gondor-gold-dark",
+    "bg-gondor-cream border-2 border-gondor-ochre text-gondor-brown-dark hover:bg-gondor-cream-dark hover:border-gondor-gold-dark",
   ghost:
-    "bg-transparent text-gondor-gold hover:text-gondor-gold-dark hover:bg-gondor-cream/50",
+    "bg-transparent text-gondor-ochre hover:text-gondor-gold-dark hover:bg-gondor-cream/60",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

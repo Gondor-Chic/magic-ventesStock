@@ -8,7 +8,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Visual */}
           <div className="relative">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-gondor-brown-dark via-gondor-stone to-gondor-brown shadow-gondor-lg">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-gondor-brown-dark via-gondor-stone to-gondor-sienna shadow-gondor-lg">
               {/* Decorative content */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center space-y-6">

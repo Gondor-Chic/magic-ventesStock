@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gondor-ivory/90 backdrop-blur-md border-b border-gondor-cream-dark/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-gondor-parchment/92 backdrop-blur-md border-b border-gondor-cream-dark/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between md:h-20">
           <Logo showAppName />
@@ -64,7 +64,7 @@ export default function Navbar() {
           isOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="border-t border-gondor-cream-dark/50 bg-gondor-ivory px-4 py-4 space-y-3">
+        <div className="border-t border-gondor-cream-dark/60 bg-gondor-parchment px-4 py-4 space-y-3">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
