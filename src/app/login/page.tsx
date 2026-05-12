@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { User, Lock, ArrowRight, Sparkles } from "lucide-react";
 import Logo from "@/components/ui/Logo";
@@ -10,11 +10,6 @@ import Button from "@/components/ui/Button";
 export default function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    // No backend logic — visual only
-  };
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -58,7 +53,7 @@ export default function LoginPage() {
             </div>
 
             {/* Login Form */}
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <div className="space-y-5">
               <Input
                 id="username"
                 label="Nom d'utilisateur"
@@ -87,28 +82,23 @@ export default function LoginPage() {
                     type="checkbox"
                     className="w-4 h-4 rounded border-gondor-cream-dark accent-gondor-gold cursor-pointer"
                   />
-                  <span className="text-gondor-brown-light text-xs">
+                  <span className="text-gondor-brown-light text-sm">
                     Se souvenir de moi
                   </span>
                 </label>
                 <Link
                   href="#"
-                  className="font-[family-name:var(--font-cinzel)] text-xs font-medium text-gondor-gold hover:text-gondor-gold-dark transition-colors duration-300"
+                  className="font-[family-name:var(--font-cinzel)] text-sm font-medium text-gondor-gold hover:text-gondor-gold-dark transition-colors duration-300"
                 >
                   Mot de passe oublié ?
                 </Link>
               </div>
 
-              <Button
-                type="submit"
-                variant="primary"
-                size="lg"
-                className="w-full mt-2"
-              >
+              <Button href="/" variant="primary" size="lg" className="w-full mt-2">
                 Entrer dans le Royaume
                 <ArrowRight size={18} />
               </Button>
-            </form>
+            </div>
 
             {/* Footer */}
             <div className="mt-8 text-center">
@@ -139,7 +129,7 @@ export default function LoginPage() {
         <div className="text-center mt-4">
           <Link
             href="/"
-            className="text-gondor-cream/50 text-xs hover:text-gondor-gold transition-colors duration-300"
+            className="text-gondor-cream/50 text-sm hover:text-gondor-gold transition-colors duration-300"
           >
             ← Retour à l'accueil
           </Link>

@@ -26,7 +26,7 @@ export default function ServicesSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4">
             <div className="h-px w-8 bg-gondor-gold" />
-            <span className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.3em] uppercase text-gondor-gold">
+            <span className="font-[family-name:var(--font-cinzel)] text-sm tracking-[0.3em] uppercase text-gondor-gold">
               Capacités de la Plateforme
             </span>
             <div className="h-px w-8 bg-gondor-gold" />

@@ -24,7 +24,7 @@ export default function ProductsSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-4">
             <div className="h-px w-8 bg-gondor-gold" />
-            <span className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.3em] uppercase text-gondor-gold">
+            <span className="font-[family-name:var(--font-cinzel)] text-sm tracking-[0.3em] uppercase text-gondor-gold">
               Collection Vedette
             </span>
             <div className="h-px w-8 bg-gondor-gold" />
@@ -69,16 +69,16 @@ export default function ProductsSection() {
                 <div className="flex items-center justify-between pt-2 border-t border-gondor-cream-dark/30">
                   <span className="font-[family-name:var(--font-cinzel)] text-xl font-bold text-gondor-gold">
                     {product.price}
-                    <span className="text-xs ml-1 text-gondor-brown-light font-normal">
+                    <span className="text-sm ml-1 text-gondor-brown-light font-normal">
                       {product.currency}
                     </span>
                   </span>
-                  <span className="inline-flex items-center gap-1 text-xs text-gondor-emerald font-medium">
+                  <span className="inline-flex items-center gap-1 text-sm text-gondor-emerald font-medium">
                     <Sparkles size={12} />
                     {product.stockQuantity > 0 ? `${product.stockQuantity} en stock` : "Rupture"}
                   </span>
                 </div>
-                <p className="mt-1 text-xs text-gondor-brown-light tracking-wide">
+                <p className="mt-1 text-sm text-gondor-brown-light tracking-wide">
                   Réf : {product.reference}
                 </p>
               </div>

@@ -79,7 +79,7 @@ export default function Footer() {
 
         <Separator className="!my-8 opacity-30" />
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-gondor-cream-dark/50 text-xs">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-gondor-cream-dark/50 text-sm">
           <p>© {BRAND.year} {BRAND.name}. Tous droits réservés.</p>
           <p className="font-[family-name:var(--font-cinzel)] tracking-wider">
             Plateforme Magic VentesStock

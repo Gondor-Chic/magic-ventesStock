@@ -37,7 +37,7 @@ export default function AboutSection() {
                   <p className="font-[family-name:var(--font-cinzel)] text-sm font-semibold text-gondor-brown-dark">
                     1,200+
                   </p>
-                  <p className="text-xs text-gondor-brown-light">
+                  <p className="text-sm text-gondor-brown-light">
                     Artefacts Magiques
                   </p>
                 </div>
@@ -50,7 +50,7 @@ export default function AboutSection() {
             <div>
               <div className="inline-flex items-center gap-2 mb-4">
                 <div className="h-px w-8 bg-gondor-gold" />
-                <span className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.3em] uppercase text-gondor-gold">
+                <span className="font-[family-name:var(--font-cinzel)] text-sm tracking-[0.3em] uppercase text-gondor-gold">
                   Notre Héritage
                 </span>
               </div>

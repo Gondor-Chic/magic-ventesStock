@@ -28,7 +28,7 @@ export default function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-gondor-gold/30 bg-gondor-gold/10 px-4 py-1.5 mb-8">
             <Sparkles size={14} className="text-gondor-gold-light" />
-            <span className="font-[family-name:var(--font-cinzel)] text-xs tracking-widest uppercase text-gondor-gold-light">
+            <span className="font-[family-name:var(--font-cinzel)] text-sm tracking-widest uppercase text-gondor-gold-light">
               Produits Magiques Premium
             </span>
           </div>

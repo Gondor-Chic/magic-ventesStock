@@ -30,7 +30,7 @@ export default function Input({ label, icon, error, id, className = "", ...props
         />
       </div>
       {error && (
-        <span className="text-xs text-gondor-ruby font-medium">{error}</span>
+        <span className="text-sm text-gondor-ruby font-medium">{error}</span>
       )}
     </div>
   );
