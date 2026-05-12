@@ -11,7 +11,7 @@ export const FEATURED_PRODUCTS: Product[] = [
   {
     id: "fairy-dust-001",
     reference: "GC-ING-001",
-    name: "Poussière de Fée",
+    name: "Poudre de Fée",
     description:
       "Récoltée dans les clairières enchantées de Lothlórien. Sublime toute potion magique d'une brillance lumineuse.",
     price: 49.99,
@@ -23,7 +23,7 @@ export const FEATURED_PRODUCTS: Product[] = [
   {
     id: "mithril-shirt-001",
     reference: "GC-ARM-001",
-    name: "Cotte de Mithril",
+    name: "Chemise de Mithril",
     description:
       "Forgée dans les anciennes salles de Khazad-dûm. Plus légère que la soie, plus résistante que les écailles de dragon.",
     price: 999.99,

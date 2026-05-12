@@ -78,7 +78,7 @@ export default function ProductsSection() {
                     {product.stockQuantity > 0 ? `${product.stockQuantity} en stock` : "Rupture"}
                   </span>
                 </div>
-                <p className="text-[10px] text-gondor-brown-light/60 tracking-wider uppercase">
+                <p className="mt-1 text-xs text-gondor-brown-light tracking-wide">
                   Réf : {product.reference}
                 </p>
               </div>

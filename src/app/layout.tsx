@@ -19,14 +19,14 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "Gondor Chic — Magic VentesStock",
   description:
-    "Artefacts magiques et produits fantaisie premium du Royaume de Gondor. Poussière de fée, cottes de mithril, cristaux elfiques et bien plus.",
+    "Artefacts magiques et produits fantaisie premium du Royaume de Gondor. Poudre de fée, chemises de mithril, cristaux elfiques et bien plus.",
   keywords: [
     "Gondor Chic",
     "magie",
     "fantaisie",
     "e-commerce",
     "mithril",
-    "poussière de fée",
+    "poudre de fée",
   ],
 };
 

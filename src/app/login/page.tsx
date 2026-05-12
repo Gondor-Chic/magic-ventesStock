@@ -46,7 +46,7 @@ export default function LoginPage() {
             {/* Logo & Header */}
             <div className="text-center mb-8">
               <div className="flex justify-center mb-6">
-                <Logo size="large" />
+                <Logo size="large" showAppName />
               </div>
               <div className="gondor-separator mb-6" />
               <h1 className="font-[family-name:var(--font-cinzel)] text-xl font-semibold text-gondor-brown-dark mb-2">
