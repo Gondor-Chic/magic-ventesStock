@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { User, Lock, ArrowRight, Sparkles } from "lucide-react";
+import { User, Lock, ArrowRight } from "lucide-react";
 import Logo from "@/components/ui/Logo";
-import Input from "@/components/ui/Input";
-import Button from "@/components/ui/Button";
+
+// Elder Futhark runes — decorative only (ancient Germanic alphabet)
+const RUNES = "ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ";
+const RUNES_REV = "ᛟᛞᛜᛚᛗᛖᛒᛏᛊᛉᛈᛇᛃᛁᚾᚺᚹᚷᚲᚱᚨᚦᚢᚠ";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -13,129 +14,172 @@ export default function LoginPage() {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gondor-brown-dark via-[#8B5520] to-[#cc7722]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(204,119,34,0.35),transparent_60%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(204,119,34,0.25),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(204,119,34,0.10),transparent_70%)]" />
+      {/* ===== AGED PARCHMENT BACKGROUND ===== */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#F5E6CE] via-[#F0DEC4] to-[#E8D2B0]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(251,245,236,0.8),transparent_60%)]" />
 
-      {/* Subtle pattern */}
+      {/* Warm ambient light */}
       <div
-        className="absolute inset-0 opacity-[0.04]"
+        className="absolute top-[5%] left-[25%] w-80 h-80 rounded-full bg-[#cc7722]/[0.07] blur-[120px]"
+        style={{ animation: "torch-flicker 4s ease-in-out infinite" }}
+      />
+      <div
+        className="absolute bottom-[10%] right-[20%] w-60 h-60 rounded-full bg-[#cc7722]/[0.05] blur-[120px]"
+        style={{ animation: "torch-flicker 5s ease-in-out infinite 1.5s" }}
+      />
+
+      {/* Subtle vignette */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(92,61,30,0.1)_100%)]" />
+
+      {/* Parchment texture */}
+      <div
+        className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cc7722' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M20 0L0 20h8l12-12 12 12h8z'/%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%235C3D1E'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
 
-      {/* Decorative glows */}
-      <div className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-[#cc7722]/15 blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-[#cc7722]/12 blur-3xl" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#cc7722]/8 blur-[100px]" />
+      {/* ===== ELDER FUTHARK RUNES (decorative) ===== */}
+      <div
+        className="absolute inset-0 overflow-hidden pointer-events-none select-none"
+        aria-hidden="true"
+      >
+        {/* Floating runes — solid color, animation controls opacity */}
+        <span className="absolute top-[8%] left-[6%] text-[#5C3D1E] text-5xl rotate-12 opacity-0" style={{ animation: "rune-glow 6s ease-in-out infinite" }}>ᚠ</span>
+        <span className="absolute top-[16%] right-[10%] text-[#5C3D1E] text-4xl -rotate-12 opacity-0" style={{ animation: "rune-glow 7s ease-in-out infinite 1s" }}>ᚦ</span>
+        <span className="absolute top-[55%] left-[5%] text-[#5C3D1E] text-6xl rotate-[20deg] opacity-0" style={{ animation: "rune-glow 8s ease-in-out infinite 2s" }}>ᚱ</span>
+        <span className="absolute top-[70%] right-[7%] text-[#5C3D1E] text-5xl -rotate-[10deg] opacity-0" style={{ animation: "rune-glow 6s ease-in-out infinite 3s" }}>ᛗ</span>
+        <span className="absolute top-[35%] left-[3%] text-[#5C3D1E] text-7xl rotate-[15deg] opacity-0" style={{ animation: "rune-glow 9s ease-in-out infinite 0.5s" }}>ᛉ</span>
+        <span className="absolute top-[85%] right-[15%] text-[#5C3D1E] text-4xl -rotate-[20deg] opacity-0" style={{ animation: "rune-glow 7s ease-in-out infinite 2.5s" }}>ᛟ</span>
+        <span className="absolute top-[4%] left-[42%] text-[#5C3D1E] text-6xl rotate-[5deg] opacity-0" style={{ animation: "rune-glow 8s ease-in-out infinite 1.5s" }}>ᛊ</span>
+        <span className="absolute bottom-[22%] left-[12%] text-[#5C3D1E] text-5xl -rotate-[15deg] opacity-0" style={{ animation: "rune-glow 6s ease-in-out infinite 4s" }}>ᚲ</span>
+        <span className="absolute top-[45%] right-[3%] text-[#5C3D1E] text-6xl rotate-[25deg] opacity-0" style={{ animation: "rune-glow 9s ease-in-out infinite 3.5s" }}>ᚹ</span>
+        <span className="absolute bottom-[6%] left-[32%] text-[#5C3D1E] text-4xl -rotate-[8deg] opacity-0" style={{ animation: "rune-glow 7s ease-in-out infinite 2s" }}>ᛏ</span>
 
-      {/* Login Card */}
-      <div className="relative z-10 w-full max-w-md mx-4 animate-fade-in-up py-8">
-        {/* Card */}
-        <div className="rounded-2xl bg-gondor-parchment/95 backdrop-blur-xl shadow-gondor-lg border border-gondor-cream-dark/60 overflow-hidden">
-          {/* Top decorative bar */}
-          <div className="h-1 bg-gradient-to-r from-gondor-gold-dark via-gondor-gold to-gondor-gold-light" />
+        {/* Rune inscription strips — top & bottom edges */}
+        <div className="absolute top-0 left-0 right-0 text-center text-[#5C3D1E]/[0.04] text-lg py-3 tracking-[0.6em]">
+          {RUNES}
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 text-center text-[#5C3D1E]/[0.04] text-lg py-3 tracking-[0.6em]">
+          {RUNES_REV}
+        </div>
+      </div>
 
-          <div className="p-8 sm:p-10">
-            {/* Logo & Header */}
-            <div className="text-center mb-8">
-              <div className="flex justify-center mb-6">
-                <Logo size="large" showAppName />
+      {/* ===== MAIN CONTENT ===== */}
+      <div
+        className="relative z-10 w-full max-w-md mx-4 py-8"
+        style={{ animation: "fade-in-up 0.8s ease-out" }}
+      >
+        {/* Shield Crest Logo */}
+        <div className="flex justify-center mb-8">
+          <Logo size="large" />
+        </div>
+
+        {/* Top ornamental divider */}
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="h-px w-14 bg-gradient-to-r from-transparent to-[#cc7722]/50" />
+          <span className="text-[#cc7722]/50 text-xs tracking-[0.5em]">
+            ⟡ ◆ ⟡
+          </span>
+          <div className="h-px w-14 bg-gradient-to-l from-transparent to-[#cc7722]/50" />
+        </div>
+
+        {/* ===== PARCHMENT CARD ===== */}
+        <div className="relative rounded-sm border-2 border-[#cc7722]/25 bg-[#FBF5EC]/80 backdrop-blur-sm shadow-[0_4px_40px_rgba(92,61,30,0.08)]">
+          {/* Corner ornaments */}
+          <div className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-[#cc7722]/35 rounded-tl-sm" />
+          <div className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-[#cc7722]/35 rounded-tr-sm" />
+          <div className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-[#cc7722]/35 rounded-bl-sm" />
+          <div className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-[#cc7722]/35 rounded-br-sm" />
+
+          {/* Inner border — double-border medieval style */}
+          <div className="m-2.5 border border-[#cc7722]/[0.12] rounded-sm">
+            <div className="p-7 sm:p-9">
+              {/* Top ornamental separator */}
+              <div className="flex items-center gap-3 mb-7">
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#cc7722]/25 to-transparent" />
+                <span className="text-[#cc7722]/35 text-[10px]">◆</span>
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#cc7722]/25 to-transparent" />
               </div>
-              <div className="gondor-separator mb-6" />
-              <h1 className="font-[family-name:var(--font-cinzel)] text-xl font-semibold text-gondor-brown-dark mb-2">
-                Bienvenue, Voyageur
-              </h1>
-              <p className="text-sm text-gondor-brown-light">
-                Franchissez les portes du royaume
-              </p>
-            </div>
 
-            {/* Login Form */}
-            <div className="space-y-5">
-              <Input
-                id="username"
-                label="Pseudo"
-                type="text"
-                placeholder="Entrez votre pseudo"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                icon={<User size={18} strokeWidth={1.5} />}
-                autoComplete="username"
-              />
+              {/* ===== LOGIN FORM ===== */}
+              <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+                {/* Pseudo */}
+                <div className="flex flex-col gap-2">
+                  <label
+                    htmlFor="username"
+                    className="font-[family-name:var(--font-medieval)] text-[13px] tracking-[0.12em] text-[#5C3D1E]/80"
+                  >
+                    Pseudo
+                  </label>
+                  <div className="relative group">
+                    <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#cc7722]/50 transition-colors duration-300 group-focus-within:text-[#cc7722]/80">
+                      <User size={16} strokeWidth={1.5} />
+                    </span>
+                    <input
+                      id="username"
+                      type="text"
+                      placeholder="Entrez votre pseudo"
+                      value={username}
+                      onChange={(e) => setUsername(e.target.value)}
+                      autoComplete="username"
+                      className="w-full rounded-sm border border-[#cc7722]/20 bg-[#F0DEC4]/40 px-4 py-3 pl-11 text-[#3A2510] text-sm placeholder:text-[#5C3D1E]/30 font-[family-name:var(--font-cormorant)] tracking-wide transition-all duration-300 focus:border-[#cc7722]/50 focus:outline-none focus:ring-1 focus:ring-[#cc7722]/20 focus:bg-white/50 focus:shadow-[0_0_15px_rgba(204,119,34,0.06)]"
+                    />
+                  </div>
+                </div>
 
-              <Input
-                id="password"
-                label="Mot de passe"
-                type="password"
-                placeholder="Entrez votre phrase secrète"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                icon={<Lock size={18} strokeWidth={1.5} />}
-                autoComplete="current-password"
-              />
+                {/* Mot de passe */}
+                <div className="flex flex-col gap-2">
+                  <label
+                    htmlFor="password"
+                    className="font-[family-name:var(--font-medieval)] text-[13px] tracking-[0.12em] text-[#5C3D1E]/80"
+                  >
+                    Mot de passe
+                  </label>
+                  <div className="relative group">
+                    <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#cc7722]/50 transition-colors duration-300 group-focus-within:text-[#cc7722]/80">
+                      <Lock size={16} strokeWidth={1.5} />
+                    </span>
+                    <input
+                      id="password"
+                      type="password"
+                      placeholder="Entrez votre phrase secrète"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      autoComplete="current-password"
+                      className="w-full rounded-sm border border-[#cc7722]/20 bg-[#F0DEC4]/40 px-4 py-3 pl-11 text-[#3A2510] text-sm placeholder:text-[#5C3D1E]/30 font-[family-name:var(--font-cormorant)] tracking-wide transition-all duration-300 focus:border-[#cc7722]/50 focus:outline-none focus:ring-1 focus:ring-[#cc7722]/20 focus:bg-white/50 focus:shadow-[0_0_15px_rgba(204,119,34,0.06)]"
+                    />
+                  </div>
+                </div>
 
-              {/* <div className="flex items-center justify-between text-sm">
-                <label className="flex items-center gap-2 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    className="w-4 h-4 rounded border-gondor-cream-dark accent-gondor-gold cursor-pointer"
-                  />
-                  <span className="text-gondor-brown-light text-sm">
-                    Se souvenir de moi
-                  </span>
-                </label>
-                <Link
-                  href="#"
-                  className="font-[family-name:var(--font-cinzel)] text-sm font-medium text-gondor-gold hover:text-gondor-gold-dark transition-colors duration-300"
+                {/* Submit */}
+                <button
+                  type="submit"
+                  className="w-full flex items-center justify-center gap-2.5 mt-3 px-8 py-3.5 rounded-sm overflow-hidden border border-[#cc7722]/50 bg-gradient-to-r from-[#8a4e10] via-[#cc7722] to-[#8a4e10] text-white font-[family-name:var(--font-cinzel)] font-semibold tracking-[0.15em] text-xs uppercase transition-all duration-300 hover:border-[#cc7722]/70 hover:shadow-[0_0_25px_rgba(204,119,34,0.25)] hover:brightness-110 cursor-pointer"
                 >
-                  Mot de passe oublié ?
-                </Link>
-              </div> */}
+                  {"S'identifier"}
+                  <ArrowRight size={15} strokeWidth={2} />
+                </button>
+              </form>
 
-              <Button href="/" variant="primary" size="lg" className="w-full mt-2">
-                S'identifier
-                <ArrowRight size={18} />
-              </Button>
+              {/* Bottom ornamental separator */}
+              <div className="flex items-center gap-3 mt-7">
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#cc7722]/25 to-transparent" />
+                <span className="text-[#cc7722]/35 text-[10px]">◆</span>
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#cc7722]/25 to-transparent" />
+              </div>
             </div>
-
-            {/* Footer */}
-            {/* <div className="mt-8 text-center">
-              <div className="gondor-separator mb-6" />
-              <p className="text-sm text-gondor-brown-light">
-                Nouveau dans le royaume ?{" "}
-                <Link
-                  href="#"
-                  className="font-[family-name:var(--font-cinzel)] font-medium text-gondor-gold hover:text-gondor-gold-dark transition-colors duration-300"
-                >
-                  Demander l'accès
-                </Link>
-              </p>
-            </div> */}
           </div>
         </div>
 
-        {/* Bottom accent */}
-        <div className="flex items-center justify-center gap-2 mt-6 text-gondor-cream/40">
-          <Sparkles size={12} />
-          <span className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.3em] uppercase">
-            Magic VentesStock
+        {/* Bottom ornamental divider */}
+        <div className="flex items-center justify-center gap-3 mt-4">
+          <div className="h-px w-14 bg-gradient-to-r from-transparent to-[#cc7722]/50" />
+          <span className="text-[#cc7722]/50 text-xs tracking-[0.5em]">
+            ⟡ ◆ ⟡
           </span>
-          <Sparkles size={12} />
+          <div className="h-px w-14 bg-gradient-to-l from-transparent to-[#cc7722]/50" />
         </div>
-
-        {/* Back to home */}
-        {/* <div className="text-center mt-4">
-          <Link
-            href="/"
-            className="text-gondor-cream/50 text-sm hover:text-gondor-gold transition-colors duration-300"
-          >
-            ← Retour à l'accueil
-          </Link>
-        </div> */}
       </div>
     </div>
   );

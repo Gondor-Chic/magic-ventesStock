@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Cinzel, Cormorant_Garamond } from "next/font/google";
+import { Cinzel, Cinzel_Decorative, Cormorant_Garamond, Uncial_Antiqua } from "next/font/google";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -10,10 +10,24 @@ const cinzel = Cinzel({
   display: "swap",
 });
 
+const cinzelDecorative = Cinzel_Decorative({
+  variable: "--font-cinzel-decorative",
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+  display: "swap",
+});
+
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const uncialAntiqua = Uncial_Antiqua({
+  variable: "--font-medieval",
+  subsets: ["latin"],
+  weight: ["400"],
   display: "swap",
 });
 
@@ -112,7 +126,7 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${cinzel.variable} ${cormorant.variable} h-full antialiased`}
+      className={`${cinzel.variable} ${cinzelDecorative.variable} ${cormorant.variable} ${uncialAntiqua.variable} h-full antialiased`}
     >
       <head>
         <Script
