@@ -15,27 +15,28 @@ export default function LoginPage() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* ===== AGED PARCHMENT BACKGROUND ===== */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#CC7722]/20 via-[#CC7722]/30 to-[#CC7722]/40" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(251,243,230,0.8),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[#CC7722]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#CC7722] via-[#b8691e] to-[#a35c1a]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(221,136,51,0.5),transparent_60%)]" />
 
       {/* Warm ambient light */}
       <div
-        className="absolute top-[5%] left-[25%] w-80 h-80 rounded-full bg-[#cc7722]/[0.07] blur-[120px]"
+        className="absolute top-[5%] left-[25%] w-80 h-80 rounded-full bg-[#FBF3E6]/[0.08] blur-[120px]"
         style={{ animation: "torch-flicker 4s ease-in-out infinite" }}
       />
       <div
-        className="absolute bottom-[10%] right-[20%] w-60 h-60 rounded-full bg-[#cc7722]/[0.05] blur-[120px]"
+        className="absolute bottom-[10%] right-[20%] w-60 h-60 rounded-full bg-[#FBF3E6]/[0.06] blur-[120px]"
         style={{ animation: "torch-flicker 5s ease-in-out infinite 1.5s" }}
       />
 
-      {/* Subtle vignette */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(204,119,34,0.08)_100%)]" />
+      {/* Subtle vignette — darken edges */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(26,15,5,0.25)_100%)]" />
 
       {/* Parchment texture */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.05]"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23CC7722'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a0f05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
 
@@ -45,22 +46,22 @@ export default function LoginPage() {
         aria-hidden="true"
       >
         {/* Floating runes — solid color, animation controls opacity */}
-        <span className="absolute top-[8%] left-[6%] text-[#CC7722] text-5xl rotate-12 opacity-0" style={{ animation: "rune-glow 6s ease-in-out infinite" }}>ᚠ</span>
-        <span className="absolute top-[16%] right-[10%] text-[#CC7722] text-4xl -rotate-12 opacity-0" style={{ animation: "rune-glow 7s ease-in-out infinite 1s" }}>ᚦ</span>
-        <span className="absolute top-[55%] left-[5%] text-[#CC7722] text-6xl rotate-[20deg] opacity-0" style={{ animation: "rune-glow 8s ease-in-out infinite 2s" }}>ᚱ</span>
-        <span className="absolute top-[70%] right-[7%] text-[#CC7722] text-5xl -rotate-[10deg] opacity-0" style={{ animation: "rune-glow 6s ease-in-out infinite 3s" }}>ᛗ</span>
-        <span className="absolute top-[35%] left-[3%] text-[#CC7722] text-7xl rotate-[15deg] opacity-0" style={{ animation: "rune-glow 9s ease-in-out infinite 0.5s" }}>ᛉ</span>
-        <span className="absolute top-[85%] right-[15%] text-[#CC7722] text-4xl -rotate-[20deg] opacity-0" style={{ animation: "rune-glow 7s ease-in-out infinite 2.5s" }}>ᛟ</span>
-        <span className="absolute top-[4%] left-[42%] text-[#CC7722] text-6xl rotate-[5deg] opacity-0" style={{ animation: "rune-glow 8s ease-in-out infinite 1.5s" }}>ᛊ</span>
-        <span className="absolute bottom-[22%] left-[12%] text-[#CC7722] text-5xl -rotate-[15deg] opacity-0" style={{ animation: "rune-glow 6s ease-in-out infinite 4s" }}>ᚲ</span>
-        <span className="absolute top-[45%] right-[3%] text-[#CC7722] text-6xl rotate-[25deg] opacity-0" style={{ animation: "rune-glow 9s ease-in-out infinite 3.5s" }}>ᚹ</span>
-        <span className="absolute bottom-[6%] left-[32%] text-[#CC7722] text-4xl -rotate-[8deg] opacity-0" style={{ animation: "rune-glow 7s ease-in-out infinite 2s" }}>ᛏ</span>
+        <span className="absolute top-[8%] left-[6%] text-[#1a0f05] text-5xl rotate-12 opacity-0" style={{ animation: "rune-glow 6s ease-in-out infinite" }}>ᚠ</span>
+        <span className="absolute top-[16%] right-[10%] text-[#1a0f05] text-4xl -rotate-12 opacity-0" style={{ animation: "rune-glow 7s ease-in-out infinite 1s" }}>ᚦ</span>
+        <span className="absolute top-[55%] left-[5%] text-[#1a0f05] text-6xl rotate-[20deg] opacity-0" style={{ animation: "rune-glow 8s ease-in-out infinite 2s" }}>ᚱ</span>
+        <span className="absolute top-[70%] right-[7%] text-[#1a0f05] text-5xl -rotate-[10deg] opacity-0" style={{ animation: "rune-glow 6s ease-in-out infinite 3s" }}>ᛗ</span>
+        <span className="absolute top-[35%] left-[3%] text-[#1a0f05] text-7xl rotate-[15deg] opacity-0" style={{ animation: "rune-glow 9s ease-in-out infinite 0.5s" }}>ᛉ</span>
+        <span className="absolute top-[85%] right-[15%] text-[#1a0f05] text-4xl -rotate-[20deg] opacity-0" style={{ animation: "rune-glow 7s ease-in-out infinite 2.5s" }}>ᛟ</span>
+        <span className="absolute top-[4%] left-[42%] text-[#1a0f05] text-6xl rotate-[5deg] opacity-0" style={{ animation: "rune-glow 8s ease-in-out infinite 1.5s" }}>ᛊ</span>
+        <span className="absolute bottom-[22%] left-[12%] text-[#1a0f05] text-5xl -rotate-[15deg] opacity-0" style={{ animation: "rune-glow 6s ease-in-out infinite 4s" }}>ᚲ</span>
+        <span className="absolute top-[45%] right-[3%] text-[#1a0f05] text-6xl rotate-[25deg] opacity-0" style={{ animation: "rune-glow 9s ease-in-out infinite 3.5s" }}>ᚹ</span>
+        <span className="absolute bottom-[6%] left-[32%] text-[#1a0f05] text-4xl -rotate-[8deg] opacity-0" style={{ animation: "rune-glow 7s ease-in-out infinite 2s" }}>ᛏ</span>
 
         {/* Rune inscription strips — top & bottom edges */}
-        <div className="absolute top-0 left-0 right-0 text-center text-[#CC7722]/[0.05] text-lg py-3 tracking-[0.6em]">
+        <div className="absolute top-0 left-0 right-0 text-center text-[#1a0f05]/[0.08] text-lg py-3 tracking-[0.6em]">
           {RUNES}
         </div>
-        <div className="absolute bottom-0 left-0 right-0 text-center text-[#CC7722]/[0.05] text-lg py-3 tracking-[0.6em]">
+        <div className="absolute bottom-0 left-0 right-0 text-center text-[#1a0f05]/[0.08] text-lg py-3 tracking-[0.6em]">
           {RUNES_REV}
         </div>
       </div>
@@ -77,19 +78,19 @@ export default function LoginPage() {
 
         {/* Top ornamental divider */}
         <div className="flex items-center justify-center gap-3 mb-4">
-          <div className="h-px w-14 bg-gradient-to-r from-transparent to-[#cc7722]/50" />
-          <span className="text-[#cc7722]/50 text-xs tracking-[0.5em]">
+          <div className="h-px w-14 bg-gradient-to-r from-transparent to-[#FBF3E6]/50" />
+          <span className="text-[#FBF3E6]/60 text-xs tracking-[0.5em]">
             ⟡ ◆ ⟡
           </span>
-          <div className="h-px w-14 bg-gradient-to-l from-transparent to-[#cc7722]/50" />
+          <div className="h-px w-14 bg-gradient-to-l from-transparent to-[#FBF3E6]/50" />
         </div>
 
         {/* ===== PARCHMENT CARD ===== */}
-        <div className="relative rounded-2xl border border-[#cc7722]/10 bg-[#FBF3E6]/60 backdrop-blur-sm shadow-[0_8px_80px_rgba(204,119,34,0.06)]">
+        <div className="relative rounded-2xl border border-[#1a0f05]/15 bg-[#FBF3E6]/90 backdrop-blur-sm shadow-[0_8px_60px_rgba(26,15,5,0.15)]">
 
           {/* ── Large corner branches (very visible) ── */}
           {/* Top-left branch */}
-          <svg className="absolute -top-10 -left-10 w-44 h-44 text-[#cc7722]/70 drop-shadow-[0_0_3px_rgba(204,119,34,0.3)]" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="absolute -top-10 -left-10 w-44 h-44 text-[#1a0f05]/80 drop-shadow-[0_0_4px_rgba(26,15,5,0.3)]" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
             {/* Main trunk */}
             <path d="M15 170 Q18 130 25 100 Q32 75 50 55 Q65 40 75 25 Q82 14 78 5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
             {/* Secondary branches */}
@@ -119,7 +120,7 @@ export default function LoginPage() {
           </svg>
 
           {/* Top-right branch (mirrored) */}
-          <svg className="absolute -top-10 -right-10 w-44 h-44 text-[#cc7722]/70 drop-shadow-[0_0_3px_rgba(204,119,34,0.3)] scale-x-[-1]" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="absolute -top-10 -right-10 w-44 h-44 text-[#1a0f05]/80 drop-shadow-[0_0_4px_rgba(26,15,5,0.3)] scale-x-[-1]" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 170 Q18 130 25 100 Q32 75 50 55 Q65 40 75 25 Q82 14 78 5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
             <path d="M25 100 Q15 90 10 78" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             <path d="M50 55 Q38 45 30 42 Q24 40 20 32" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
@@ -141,7 +142,7 @@ export default function LoginPage() {
           </svg>
 
           {/* Bottom-left branch */}
-          <svg className="absolute -bottom-10 -left-10 w-44 h-44 text-[#cc7722]/70 drop-shadow-[0_0_3px_rgba(204,119,34,0.3)] scale-y-[-1]" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="absolute -bottom-10 -left-10 w-44 h-44 text-[#1a0f05]/80 drop-shadow-[0_0_4px_rgba(26,15,5,0.3)] scale-y-[-1]" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 170 Q18 130 25 100 Q32 75 50 55 Q65 40 75 25 Q82 14 78 5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
             <path d="M25 100 Q15 90 10 78" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             <path d="M50 55 Q38 45 30 42 Q24 40 20 32" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
@@ -157,7 +158,7 @@ export default function LoginPage() {
           </svg>
 
           {/* Bottom-right branch */}
-          <svg className="absolute -bottom-10 -right-10 w-44 h-44 text-[#cc7722]/70 drop-shadow-[0_0_3px_rgba(204,119,34,0.3)] scale-[-1]" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="absolute -bottom-10 -right-10 w-44 h-44 text-[#1a0f05]/80 drop-shadow-[0_0_4px_rgba(26,15,5,0.3)] scale-[-1]" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 170 Q18 130 25 100 Q32 75 50 55 Q65 40 75 25 Q82 14 78 5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
             <path d="M25 100 Q15 90 10 78" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             <path d="M50 55 Q38 45 30 42 Q24 40 20 32" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
@@ -173,7 +174,7 @@ export default function LoginPage() {
           </svg>
 
           {/* ── Side vines (tall, visible) ── */}
-          <svg className="absolute top-1/2 -left-8 -translate-y-1/2 w-14 h-64 text-[#cc7722]/55" viewBox="0 0 50 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="absolute top-1/2 -left-8 -translate-y-1/2 w-14 h-64 text-[#1a0f05]/70" viewBox="0 0 50 260" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M40 0 Q20 25 30 50 Q42 75 22 100 Q8 120 25 145 Q38 165 18 190 Q6 210 28 235 Q35 248 25 260" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             {/* Side twigs */}
             <path d="M30 50 Q15 42 10 32" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -192,7 +193,7 @@ export default function LoginPage() {
             <circle cx="3" cy="172" r="2.5" fill="currentColor" opacity="0.3" />
           </svg>
 
-          <svg className="absolute top-1/2 -right-8 -translate-y-1/2 w-14 h-64 text-[#cc7722]/55 scale-x-[-1]" viewBox="0 0 50 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="absolute top-1/2 -right-8 -translate-y-1/2 w-14 h-64 text-[#1a0f05]/70 scale-x-[-1]" viewBox="0 0 50 260" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M40 0 Q20 25 30 50 Q42 75 22 100 Q8 120 25 145 Q38 165 18 190 Q6 210 28 235 Q35 248 25 260" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             <path d="M30 50 Q15 42 10 32" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
             <path d="M22 100 Q8 92 5 80" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -209,11 +210,11 @@ export default function LoginPage() {
           </svg>
 
           {/* Inner border — organic rounded */}
-          <div className="m-3 border border-[#cc7722]/8 rounded-xl">
+          <div className="m-3 border border-[#1a0f05]/10 rounded-xl">
             <div className="p-7 sm:p-9">
               {/* Top ornamental flourish — elaborate vine */}
               <div className="flex items-center justify-center mb-7">
-                <svg className="w-full h-10 text-[#cc7722]/50" viewBox="0 0 340 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-full h-10 text-[#1a0f05]/60" viewBox="0 0 340 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   {/* Left vine */}
                   <path d="M0 20 Q20 20 40 16 Q55 12 70 15 Q85 18 100 14 Q112 10 125 14 Q135 17 145 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                   <path d="M40 16 Q35 8 28 6" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
@@ -266,7 +267,7 @@ export default function LoginPage() {
                     Pseudo
                   </label>
                   <div className="relative group">
-                    <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#cc7722]/50 transition-colors duration-300 group-focus-within:text-[#cc7722]/80">
+                    <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#CC7722]/60 transition-colors duration-300 group-focus-within:text-[#CC7722]">
                       <User size={16} strokeWidth={1.5} />
                     </span>
                     <input
@@ -276,7 +277,7 @@ export default function LoginPage() {
                       value={username}
                       onChange={(e) => setUsername(e.target.value)}
                       autoComplete="username"
-                      className="w-full rounded-sm border border-[#cc7722]/25 bg-[#CC7722]/[0.06] px-4 py-3 pl-11 text-[#3A2510] text-sm placeholder:text-[#CC7722]/30 font-[family-name:var(--font-cormorant)] tracking-wide transition-all duration-300 focus:border-[#cc7722]/50 focus:outline-none focus:ring-1 focus:ring-[#cc7722]/20 focus:bg-white/50 focus:shadow-[0_0_15px_rgba(204,119,34,0.08)]"
+                      className="w-full rounded-lg border border-[#CC7722]/30 bg-[#CC7722]/[0.08] px-4 py-3 pl-11 text-[#3A2510] text-sm placeholder:text-[#CC7722]/40 font-[family-name:var(--font-cormorant)] tracking-wide transition-all duration-300 focus:border-[#CC7722]/60 focus:outline-none focus:ring-1 focus:ring-[#CC7722]/30 focus:bg-white/60 focus:shadow-[0_0_15px_rgba(204,119,34,0.1)]"
                     />
                   </div>
                 </div>
@@ -290,7 +291,7 @@ export default function LoginPage() {
                     Mot de passe
                   </label>
                   <div className="relative group">
-                    <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#cc7722]/50 transition-colors duration-300 group-focus-within:text-[#cc7722]/80">
+                    <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#CC7722]/60 transition-colors duration-300 group-focus-within:text-[#CC7722]">
                       <Lock size={16} strokeWidth={1.5} />
                     </span>
                     <input
@@ -300,7 +301,7 @@ export default function LoginPage() {
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       autoComplete="current-password"
-                      className="w-full rounded-sm border border-[#cc7722]/25 bg-[#CC7722]/[0.06] px-4 py-3 pl-11 text-[#3A2510] text-sm placeholder:text-[#CC7722]/30 font-[family-name:var(--font-cormorant)] tracking-wide transition-all duration-300 focus:border-[#cc7722]/50 focus:outline-none focus:ring-1 focus:ring-[#cc7722]/20 focus:bg-white/50 focus:shadow-[0_0_15px_rgba(204,119,34,0.08)]"
+                      className="w-full rounded-lg border border-[#CC7722]/30 bg-[#CC7722]/[0.08] px-4 py-3 pl-11 text-[#3A2510] text-sm placeholder:text-[#CC7722]/40 font-[family-name:var(--font-cormorant)] tracking-wide transition-all duration-300 focus:border-[#CC7722]/60 focus:outline-none focus:ring-1 focus:ring-[#CC7722]/30 focus:bg-white/60 focus:shadow-[0_0_15px_rgba(204,119,34,0.1)]"
                     />
                   </div>
                 </div>
@@ -308,7 +309,7 @@ export default function LoginPage() {
                 {/* Submit */}
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2.5 mt-3 px-8 py-3.5 rounded-sm overflow-hidden border border-[#cc7722]/60 bg-[#CC7722] text-white font-[family-name:var(--font-cinzel)] font-semibold tracking-[0.15em] text-xs uppercase shadow-[0_2px_12px_rgba(204,119,34,0.3)] transition-all duration-300 hover:bg-[#DD8833] hover:border-[#cc7722] hover:shadow-[0_0_25px_rgba(204,119,34,0.4)] cursor-pointer"
+                  className="w-full flex items-center justify-center gap-2.5 mt-3 px-8 py-3.5 rounded-lg overflow-hidden border border-[#CC7722]/50 bg-[#CC7722] text-[#FBF3E6] font-[family-name:var(--font-cinzel)] font-semibold tracking-[0.15em] text-xs uppercase shadow-[0_2px_12px_rgba(204,119,34,0.35)] transition-all duration-300 hover:bg-[#DD8833] hover:border-[#CC7722]/70 hover:shadow-[0_0_25px_rgba(204,119,34,0.45)] cursor-pointer"
                 >
                   {"S'identifier"}
                   <ArrowRight size={15} strokeWidth={2} />
@@ -317,7 +318,7 @@ export default function LoginPage() {
 
               {/* Bottom ornamental flourish — elaborate vine */}
               <div className="flex items-center justify-center mt-7">
-                <svg className="w-full h-8 text-[#cc7722]/45" viewBox="0 0 340 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-full h-8 text-[#1a0f05]/55" viewBox="0 0 340 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   {/* Left vine scroll */}
                   <path d="M0 16 Q25 16 50 12 Q70 8 90 13 Q108 17 125 12 Q140 8 155 14" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
                   <path d="M50 12 Q45 5 38 7" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
@@ -343,11 +344,11 @@ export default function LoginPage() {
 
         {/* Bottom ornamental divider */}
         <div className="flex items-center justify-center gap-3 mt-4">
-          <div className="h-px w-14 bg-gradient-to-r from-transparent to-[#cc7722]/50" />
-          <span className="text-[#cc7722]/50 text-xs tracking-[0.5em]">
+          <div className="h-px w-14 bg-gradient-to-r from-transparent to-[#FBF3E6]/50" />
+          <span className="text-[#FBF3E6]/60 text-xs tracking-[0.5em]">
             ⟡ ◆ ⟡
           </span>
-          <div className="h-px w-14 bg-gradient-to-l from-transparent to-[#cc7722]/50" />
+          <div className="h-px w-14 bg-gradient-to-l from-transparent to-[#FBF3E6]/50" />
         </div>
       </div>
     </div>

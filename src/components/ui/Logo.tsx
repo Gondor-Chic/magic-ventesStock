@@ -33,7 +33,7 @@ export default function Logo({
         height={h}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="transition-transform duration-500 group-hover:scale-105 drop-shadow-[0_2px_8px_rgba(92,61,30,0.15)]"
+        className="transition-transform duration-500 group-hover:scale-105 drop-shadow-[0_2px_12px_rgba(26,15,5,0.4)]"
         aria-label="Gondor Chic — Blason du Royaume"
       >
         {/* Crown */}
@@ -158,12 +158,12 @@ export default function Logo({
       {/* Brand name */}
       <div className="flex flex-col items-center gap-0.5">
         <span
-          className={`font-[family-name:var(--font-cinzel-decorative)] font-bold tracking-[0.2em] text-[#CC7722] transition-all duration-300 group-hover:text-[#DD8833] ${textSizes[size]}`}
+          className={`font-[family-name:var(--font-cinzel-decorative)] font-bold tracking-[0.2em] text-[#FBF3E6] transition-all duration-300 group-hover:text-white drop-shadow-[0_1px_3px_rgba(26,15,5,0.3)] ${textSizes[size]}`}
         >
           GONDOR CHIC
         </span>
         {showAppName && (
-          <span className="font-[family-name:var(--font-cormorant)] text-[11px] tracking-[0.3em] uppercase text-[#CC7722]/40 mt-0.5">
+          <span className="font-[family-name:var(--font-cormorant)] text-[11px] tracking-[0.3em] uppercase text-[#FBF3E6]/60 mt-0.5">
             Magic VentesStock
           </span>
         )}
