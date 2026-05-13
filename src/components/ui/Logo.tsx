@@ -158,12 +158,12 @@ export default function Logo({
       {/* Brand name */}
       <div className="flex flex-col items-center gap-0.5">
         <span
-          className={`font-[family-name:var(--font-cinzel-decorative)] font-bold tracking-[0.2em] text-[#3A2510] transition-all duration-300 group-hover:text-[#cc7722] ${textSizes[size]}`}
+          className={`font-[family-name:var(--font-cinzel-decorative)] font-bold tracking-[0.2em] text-[#CC7722] transition-all duration-300 group-hover:text-[#DD8833] ${textSizes[size]}`}
         >
           GONDOR CHIC
         </span>
         {showAppName && (
-          <span className="font-[family-name:var(--font-cormorant)] text-[11px] tracking-[0.3em] uppercase text-[#5C3D1E]/50 mt-0.5">
+          <span className="font-[family-name:var(--font-cormorant)] text-[11px] tracking-[0.3em] uppercase text-[#CC7722]/40 mt-0.5">
             Magic VentesStock
           </span>
         )}
